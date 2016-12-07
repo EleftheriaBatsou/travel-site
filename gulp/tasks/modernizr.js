@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
 modernizr = require('gulp-modernizr');
 
 gulp.task('modernizr', function(){
@@ -7,6 +7,6 @@ gulp.task('modernizr', function(){
 			"options": [
 				"setClasses"
 			]
-		}));
+		}))
 		.pipe(gulp.dest('./app/temp/scripts/'));
 });
